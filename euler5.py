@@ -11,5 +11,7 @@ Finds the lowest number that has all numbers from 1 to num as factors
             if small % i != 0:
                 small += num
                 break
+
+smallest_multiple(20)
     
         

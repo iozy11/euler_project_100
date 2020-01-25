@@ -8,3 +8,5 @@ finds the largest palindromic product of numbers between the ranges of [x,y)
             if str(i*j) == str(i*j)[::-1] and i * j > big:
                 big = i * j
     return big
+
+print(euler4(100,999))

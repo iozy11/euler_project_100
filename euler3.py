@@ -16,3 +16,5 @@ Takes an integer and returns the largest prime factor
             
                 
     return prime
+
+print(euler3(600851475143))
