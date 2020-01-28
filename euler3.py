@@ -1,6 +1,6 @@
 import math
 
-def euler3(num):
+def largest_prime(num):
     '''(int) -> int
 Takes an integer and returns the largest prime factor
 '''
@@ -17,4 +17,4 @@ Takes an integer and returns the largest prime factor
                 
     return prime
 
-print(euler3(600851475143))
+print(largest_prime(600851475143))
