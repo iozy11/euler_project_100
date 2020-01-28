@@ -12,6 +12,6 @@ Finds the lowest number that has all numbers from 1 to num as factors
                 small += num
                 break
 
-smallest_multiple(20)
+print(smallest_multiple(20))
     
         

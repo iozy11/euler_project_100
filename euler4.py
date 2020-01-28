@@ -1,4 +1,4 @@
-def euler4(x,y):
+def big_palindrome(x,y):
     '''(int,int) -> int
 finds the largest palindromic product of numbers between the ranges of [x,y)
 '''
@@ -9,4 +9,4 @@ finds the largest palindromic product of numbers between the ranges of [x,y)
                 big = i * j
     return big
 
-print(euler4(100,999))
+print(big_palindrome(100,999))
