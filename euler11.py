@@ -1,3 +1,4 @@
+import time
 def process_grid():
     '''(none) -> array
 Takes this specific copy-pasted grid and makes a 20X20 array
@@ -38,6 +39,8 @@ def grid_run(arr):
     '''(int) -> int
 Finds the largest product of (num) numbers in any direction and returns it
 '''
+    tick = time.time()
+
     big = 0
     
     #Left-right check
@@ -68,7 +71,8 @@ Finds the largest product of (num) numbers in any direction and returns it
                     big = arr[i][j] * arr[i-1][j+1] * arr[i-2][j+2] * arr[i-3][j+3]
                     
                     
-    
+    tock = time.time() - tick
+    print('Code took ' + str(tock) + ' seconds to execute.')
     return big
 
     

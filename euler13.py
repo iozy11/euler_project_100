@@ -1,7 +1,9 @@
+import time
 def largest_sum():
     '''(none) -> none
 Finds the first 10 digits of the sum of a given list of 100 50-digit numbers
 '''
+    tick = time.time()
     arr = [37107287533902102798797998220837590246510135740250,
 46376937677490009712648124896970078050417018260538,
 74324986199524741059474233309513058123726617309629,
@@ -106,6 +108,8 @@ Finds the first 10 digits of the sum of a given list of 100 50-digit numbers
     for i in range(len(arr)):
         total += arr[i]
     
+    tock = time.time() - tick
+    print('Code took ' + str(tock) + ' seconds to execute.')
     return str(total)[0:10]
 
 print('The first 10 digits of the sum of the list are: ' + largest_sum())

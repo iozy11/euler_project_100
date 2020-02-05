@@ -1,7 +1,9 @@
+import time
 def prime_sieve(num):
     '''(int) -> array
 Finds the sum of all primes smaller than num
 '''
+    tick = time.time()
     #Create an array of "True" 2 through num
     arrT = [True for i in range(2,num+1)]
     arrP = []
@@ -17,6 +19,8 @@ Finds the sum of all primes smaller than num
     for i in range(2,len(arrT)):
         if arrT[i] == True:
             arrP.append(i)
+    tock = time.time() - tick
+    print('Code took ' + str(tock) + ' seconds to execute.')
     return arrP
 
 print(sum(prime_sieve(2000000)))

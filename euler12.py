@@ -1,3 +1,4 @@
+import time
 def find_factors(num):
     '''(int) -> array
 Finds all the factors for number (num) and returns them as an array
@@ -14,6 +15,7 @@ def triangle_factors(target):
     '''(int) -> int
 Finds the first triangle number that has (target) factors
 '''
+    tick = time.time()
     t = 1
     n = 1
     while tau(t) < target:
@@ -21,6 +23,8 @@ Finds the first triangle number that has (target) factors
         for i in range(n+1):
             t += i
         n += 1
+    tock = time.time() - tick
+    print('Code took ' + str(tock) + ' seconds to execute.')
     return t
 
             
